@@ -1,27 +1,31 @@
-# Animationland
+# Animationland :jack_o_lantern:
 Es un pequeño juego con solo HTML5 y CSS3 en el cual pongo en práctica mis habilidades para el dibujo y animación con CSS3. Es un proyecto que viene de un reto del curso de animaciones con CSS de Platzi.
 
-## ¿Cómo se juega?
+## ¿Cómo se juega? :tennis:
 Muy sencillo es intentar seleccionar los conejos hasta que tengas 4 en el Score.
 
-## Propiedades de CSS usadas:
-El contenedor padre: ```position: relative;``` y los hijos usan: ```position: absolute;```. Con esto logro que todos los hijos referencien sus posiciones al contenedor padre.
+## Propiedades de CSS usadas: :black_nib:
+El contenedor padre: `position: relative;` y los hijos usan: `position: absolute;`. Con esto logro que todos los hijos referencien sus posiciones al contenedor padre.
 
-El otro tema importante es el de crear capas(contexto de apilamiento). Para diferenciar las posiciones en Z de cada elemento le asigno varios valores de ```z-index: #;``` de 1 en adelante del contenedor más lejano al más cercano.
+El otro tema importante es el de crear capas(contexto de apilamiento). Para diferenciar las posiciones en Z de cada elemento le asigno varios valores de `z-index: #;` de 1 en adelante del contenedor más lejano al más cercano.
 
-Para alinear los contenedores se usa: ```top: #px;```, ```bottom: #px;```, ```left: #px;```, ```right: #px;```. Con esto los posiciono en el eje (x;y) del elemento padre.
+Para alinear los contenedores se usa: `top: #px;`, `bottom: #px;`, `left: #px;`, `right: #px;`. Con esto los posiciono en el eje (x;y) del elemento padre.
 
-Para permitir que los contenedores salgan de sus padres y no se vea o no ocurra un scroll feo, empleo las propiedades: ```overflow-y: hidden;``` y ```overflow-x: hidden;```. Esto ayuda a las animaciones que se ejecutan de manera infinita a entrar y salir del contenedor.
+Para permitir que los contenedores salgan de sus padres y no se vea o no ocurra un scroll feo, empleo las propiedades: `overflow-y: hidden;` y `overflow-x: hidden;`. Esto ayuda a las animaciones que se ejecutan de manera infinita a entrar y salir del contenedor.
 
-Para ahorrar el uso de etiquetas ```<div></div>``` a la hoa de dibujar elementos en CSS, empleo los pseudo-elementos ```::before``` y ```::after``` y dentro de cada uno la propiedad: ```content: '';``` Esta me permite duplicar el contenedor de la clase en cuestión y modificarlo a mi gusto.(ver clases:```.ojos {...}``` y ```.orejas {...}```)
+Para ahorrar el uso de etiquetas `<div></div>` a la hoa de dibujar elementos en CSS, empleo los pseudo-elementos `::before` y `::after` y dentro de cada uno la propiedad: `content: '';` Esta me permite duplicar el contenedor de la clase en cuestión y modificarlo a mi gusto.(ver clases:`.ojos {...}` y `.orejas {...}`)
 
-Otra propiedad interesante y muy versátil es ```clip-path: polygon();```. Esta nos ayuda a crear máscaras de recorte o simplemente figuras de diferente tipo(círculos, polígonos, triángulos, elipses, etc.)
+Otra propiedad interesante y muy versátil es `clip-path: polygon();`. Esta nos ayuda a crear máscaras de recorte o simplemente figuras de diferente tipo(círculos, polígonos, triángulos, elipses, etc.)
 
-Para recrear el agua y el césped uso la propiedad ```background: linear-gradient();```, nos permite experimentar y dibujar diferentes patrones con CSS.
+Para recrear el agua y el césped uso la propiedad `background: linear-gradient();`, nos permite experimentar y dibujar diferentes patrones con CSS.
 
-Por último está el  tema de las animaciones que era el objetivo principal de este ejercicio. ```animation: [name] [duration] [timing-function] [delay] [iterationcount] [direction] [fill-mode] [play-state];``` y los key-frames ```@keyframes name {}```. Es importante seleccionar bien que propiedades animar para tener una buena performance.
+Por último está el  tema de las animaciones que era el objetivo principal de este ejercicio.
+```css
+animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
+```
+y los key-frames `@keyframes name {}`. Es importante seleccionar bien que propiedades animar para tener una buena performance.
 
-## Recursos y Enlaces
+## Recursos y Enlaces :fountain:
 [Tipografía utilizada](https://www.dafont.com/es/another-danger.font)
 
 [SVGs](https://svgsilh.com/)
@@ -44,11 +48,10 @@ Por último está el  tema de las animaciones que era el objetivo principal de e
 
 [::before](https://developer.mozilla.org/es/docs/Web/CSS/::before)
 
-
-## Contribuyendo
+## Contribuyendo :raising_hand:
 El código está disponible para el que desee lo modifique y lo use a su conveniencia. Espero que les sirva para aprender algo más de CSS3.
 Atenderé las solicitudes de modificaciones para mejorarlo siempre y cuando usemos solo HTML5 y CSS3.
 
-## Licencia
+## Licencia :unlock:
 
 [MIT](https://choosealicense.com/licenses/mit/)
